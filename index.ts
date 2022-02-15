@@ -37,8 +37,6 @@ class HastebinPlugin extends CustomPlugin {
     constructor(options?: HastebinPluginOptions) {
         super();
 
-        checkInvalidKey(options!, ['host'], 'HastebinPluginOptions');
-
         this.host = options?.host ?? this.defaultHost;
     }
 
